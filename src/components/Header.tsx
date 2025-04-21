@@ -22,7 +22,7 @@ const Header = () => {
         <div className="flex items-center space-x-4">
           <Button variant="outline" className="hidden md:flex items-center gap-2 border-plumbing-blue text-plumbing-blue hover:bg-plumbing-blue hover:text-white">
             <Phone size={18} />
-            <span>555-123-4567</span>
+            <span>07837976571</span>
           </Button>
           <Button className="bg-plumbing-emergency hover:bg-red-700 text-white font-bold">
             Emergency Call
