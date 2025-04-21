@@ -31,7 +31,7 @@ const Contact = () => {
   };
 
   const handleWhatsAppContact = () => {
-    window.location.href = "https://wa.me/1555123456";
+    window.location.href = "https://wa.me/+447837976571";
   };
 
   return (
@@ -86,7 +86,7 @@ const Contact = () => {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    placeholder="(555) 123-4567" 
+                    placeholder="123-456-7899" 
                     required 
                   />
                 </div>
@@ -124,7 +124,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-medium">Phone</h4>
-                    <p className="text-gray-600">555-123-4567</p>
+                    <p className="text-gray-600">07837976571</p>
                     <Button 
                       onClick={handleEmergencyCall}
                       className="mt-2 bg-plumbing-emergency hover:bg-red-700 text-white text-sm px-3 py-1"
@@ -140,7 +140,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-medium">WhatsApp</h4>
-                    <p className="text-gray-600">+1 555-123-456</p>
+                    <p className="text-gray-600">07837976571</p>
                     <Button 
                       onClick={handleWhatsAppContact}
                       variant="outline"
@@ -157,7 +157,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-medium">Email</h4>
-                    <p className="text-gray-600">info@quickplumbconnect.com</p>
+                    <p className="text-gray-600">info@tbc.com</p>
                   </div>
                 </div>
                 
@@ -169,7 +169,7 @@ const Contact = () => {
                     <h4 className="font-medium">Address</h4>
                     <p className="text-gray-600">
                       123 Plumbing Street<br />
-                      London, EC1A 1BB<br />
+                      Southampton, SO11 2RT<br />
                       United Kingdom
                     </p>
                   </div>
