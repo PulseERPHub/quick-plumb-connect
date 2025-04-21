@@ -8,11 +8,11 @@ const Hero = () => {
   const [currentImage, setCurrentImage] = useState("primary");
 
   const handleEmergencyCall = () => {
-    window.location.href = "tel:555-123-4567";
+    window.location.href = "tel:07837976571";
   };
 
   const handleWhatsAppContact = () => {
-    window.location.href = "https://wa.me/1555123456";
+    window.location.href = "https://wa.me/+447837976571";
   };
 
   // Updated plumbing-specific image URLs from Unsplash
