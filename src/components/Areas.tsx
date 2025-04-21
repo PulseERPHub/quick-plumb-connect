@@ -2,16 +2,14 @@
 import { MapPin } from "lucide-react";
 
 const areas = [
-  "North London",
-  "East London",
-  "South London",
-  "West London",
-  "Central London",
-  "Greater London",
+  "London",
+  "Berkshire",
+  "Buckinghamshire",
   "Surrey",
-  "Kent",
-  "Essex",
-  "Hertfordshire"
+  "Hampshire",
+  "Oxfordshire",
+  "West Sussex",
+  "East Sussex"
 ];
 
 const AreasMap = () => {
@@ -22,7 +20,7 @@ const AreasMap = () => {
           <h2 className="text-3xl font-bold text-plumbing-darkgray">Areas We Cover</h2>
           <div className="h-1 w-20 bg-plumbing-blue mx-auto mt-4 mb-6"></div>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Our plumbing services are available throughout London and surrounding areas.
+            Our plumbing services are available throughout Southampton and surrounding areas.
           </p>
         </div>
         
@@ -42,7 +40,7 @@ const AreasMap = () => {
                 <h4 className="font-medium text-plumbing-darkgray">Main Office</h4>
                 <p className="text-gray-600">
                   123 Plumbing Street<br />
-                  London, EC1A 1BB<br />
+                  Southampton, SO11 2RT<br />
                   United Kingdom
                 </p>
               </div>
