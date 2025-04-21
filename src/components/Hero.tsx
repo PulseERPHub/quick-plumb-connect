@@ -15,11 +15,11 @@ const Hero = () => {
     window.location.href = "https://wa.me/1555123456";
   };
 
-  // Updated image URLs with reliable placeholders
+  // Updated plumbing-specific image URLs from Unsplash
   const primaryImage =
-    "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80";
+    "https://images.unsplash.com/photo-1581090700227-c21d6a51114b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"; // plumber working under sink
   const fallbackImage =
-    "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80";
+    "https://images.unsplash.com/photo-1600585154437-48fa9ac0a0e6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"; // plumbing tools on workbench
 
   const handleImageError = () => {
     if (currentImage === "primary") {
