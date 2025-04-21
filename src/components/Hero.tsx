@@ -1,8 +1,11 @@
 
 import { MessageCircle, Phone } from "lucide-react";
 import { Button } from "./ui/button";
+import { useState } from "react";
 
 const Hero = () => {
+  const [imageError, setImageError] = useState(false);
+  
   const handleEmergencyCall = () => {
     window.location.href = "tel:555-123-4567";
   };
@@ -11,6 +14,10 @@ const Hero = () => {
     window.location.href = "https://wa.me/1555123456";
   };
 
+  // Reliable plumber image URL (if this doesn't work, it will fallback to a placeholder)
+  const primaryImage = "https://images.unsplash.com/photo-1527484250829-393d90d8ed9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80";
+  const fallbackImage = "https://images.unsplash.com/photo-1615529482597-f456f4c23c3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80";
+  
   return (
     <div className="relative bg-gradient-to-r from-blue-50 to-blue-100 py-20">
       <div className="container mx-auto px-4">
@@ -42,10 +49,14 @@ const Hero = () => {
           </div>
           <div className="md:w-1/2 flex justify-center">
             <img 
-              src="https://images.unsplash.com/photo-1606274970327-5a6a0656545b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+              src={imageError ? fallbackImage : primaryImage} 
               alt="Professional plumber" 
               className="rounded-lg shadow-xl max-w-full h-auto"
               style={{ maxHeight: "400px" }}
+              onError={() => {
+                console.log("Primary image failed to load, trying fallback");
+                setImageError(true);
+              }}
             />
           </div>
         </div>
