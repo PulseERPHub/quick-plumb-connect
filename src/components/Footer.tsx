@@ -10,9 +10,9 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">QuickPlumb Connect</h3>
+            <h3 className="text-xl font-bold mb-4">South Coast Plumbers</h3>
             <p className="text-gray-300 mb-4">
-              Professional plumbing services for residential and commercial properties in London and surrounding areas.
+              Professional plumbing services for residential and commercial properties in Southampton and surrounding areas.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-white hover:text-plumbing-blue transition-colors">
@@ -64,15 +64,15 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <Phone size={18} className="mr-3 text-plumbing-blue mt-1" />
-                <span>555-123-4567</span>
+                <span>07837976571</span>
               </li>
               <li className="flex items-start">
                 <MessageCircle size={18} className="mr-3 text-plumbing-blue mt-1" />
-                <span>+1 555-123-456 (WhatsApp)</span>
+                <span>07837976571 (WhatsApp)</span>
               </li>
               <li className="flex items-start">
                 <Mail size={18} className="mr-3 text-plumbing-blue mt-1" />
-                <span>info@quickplumbconnect.com</span>
+                <span>info@tbc.com</span>
               </li>
             </ul>
           </div>
@@ -80,7 +80,7 @@ const Footer = () => {
         
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
           <p className="text-gray-400">
-            © {currentYear} QuickPlumb Connect. All rights reserved.
+            © {currentYear} South Coast Plumbers. All rights reserved.
           </p>
         </div>
       </div>
