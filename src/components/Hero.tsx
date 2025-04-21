@@ -17,7 +17,7 @@ const Hero = () => {
 
   // Updated plumbing-specific image URLs from Unsplash
   const primaryImage =
-    "https://images.unsplash.com/photo-1581090700227-c21d6a51114b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"; // plumber working under sink
+    "https://images.unsplash.com/photo-1590080877777-8813fa963d9f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"; // man working on pipe in wall
   const fallbackImage =
     "https://images.unsplash.com/photo-1600585154437-48fa9ac0a0e6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"; // plumbing tools on workbench
 
