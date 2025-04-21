@@ -2,9 +2,32 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+
+// Scroll to top on route change
+const ScrollToTop = () => {
+  const { pathname, hash } = useLocation();
+
+  useEffect(() => {
+    // If no hash in URL, scroll to top
+    if (!hash) {
+      window.scrollTo(0, 0);
+    } 
+    // If there's a hash, scroll to that element
+    else {
+      const id = hash.replace('#', '');
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [pathname, hash]);
+
+  return null;
+};
 
 const queryClient = new QueryClient();
 
@@ -14,6 +37,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
