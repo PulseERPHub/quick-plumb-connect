@@ -20,7 +20,7 @@ const services = [
   },
   {
     title: "Blocks",
-    description: "Fast and efficient unblocking services including unblocking toilets, drainage sysmtes, showers and sinks.",
+    description: "Fast and efficient unblocking services including unblocking toilets, drainage systems, showers and sinks.",
     features: ["Unblock toilets", "Clear draingage pipes", "Unblock sinks"]
   },
   {
