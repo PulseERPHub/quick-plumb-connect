@@ -188,7 +188,7 @@ const Contact = () => {
                   </div>
                 </div>
                 
-                <div className="flex items-start">
+                {/*<div className="flex items-start">
                   <div className="bg-blue-100 p-3 rounded-full mr-4">
                     <MapPin size={20} className="text-plumbing-blue" />
                   </div>
@@ -200,7 +200,7 @@ const Contact = () => {
                       United Kingdom
                     </p>
                   </div>
-                </div>
+                </div>*/}
               </div>
             </div>
           </div>
