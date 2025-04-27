@@ -24,27 +24,28 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);  // Start loading
     console.log("in HandleSubmit");
+    
     try {
       const response = await fetch('https://script.google.com/macros/s/AKfycbyDeTC9AD25HehScBgzVMFXNFKGx1yS5voRFwONeQZClBvxNQ9eNplEubqaiFLxE8Bo/exec', {
         method: 'POST',
-      body: JSON.stringify(formData),
-      headers: { 'Content-Type': 'application/json' },
-      mode: 'no-cors'  // Opaque response
+        body: JSON.stringify(formData),
+        headers: { 'Content-Type': 'application/json' },
+        mode: 'no-cors'  // Opaque response
       });
 
       // No way to read response when in no-cors mode
-      alert("Thank you for your message! We'll get back to you soon2.");
+      alert("Thank you for your message! We'll get back to you soon!");
       setFormData({ name: "", email: "", phone: "", message: "" });
-        } catch (error) {
-          console.error("Submission error:", error);
-          alert("Error submitting the form. Please try again later.");
-        } finally {
-          setLoading(false);
-        }
-    };
+      
+    } catch (error) {
+      console.error("Submission error:", error);
+      alert("Error submitting the form. Please try again later.");
+    } finally {
+      setLoading(false);
+    }
+
+    // These lines were outside the function block
     console.log("Form submitted:", formData);
-    alert("Thank you for your message! We'll get back to you soon.");
-    setFormData({ name: "", email: "", phone: "", message: "" });
   };
 
   const handleEmergencyCall = () => {
