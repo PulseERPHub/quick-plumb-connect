@@ -49,7 +49,7 @@ const Contact = () => {
   };
 
   const handleEmergencyCall = () => {
-    window.location.href = "tel:555-123-4567";
+    window.location.href = "tel:07837976571";
   };
 
   const handleWhatsAppContact = () => {
