@@ -27,25 +27,21 @@ const Contact = () => {
     try {
       const response = await fetch('https://script.google.com/macros/s/AKfycbyDeTC9AD25HehScBgzVMFXNFKGx1yS5voRFwONeQZClBvxNQ9eNplEubqaiFLxE8Bo/exec', {
         method: 'POST',
-        body: JSON.stringify(formData),
-        headers: { 'Content-Type': 'application/json' },
-        mode: 'no-cors'
-      });
-  
-      const result = await response.json();
-  
-      if (result.result === 'success') {
-        alert("Thank you for your message! We'll get back to you soon - hello.");
-        setFormData({ name: "", email: "", phone: "", message: "" });
-      } else {
-        alert("Oops! Something went wrong. Please try again later.");
+      body: JSON.stringify(formData),
+      headers: { 'Content-Type': 'application/json' },
+      mode: 'no-cors'  // Opaque response
+    });
+
+    // No way to read response when in no-cors mode
+    alert("Thank you for your message! We'll get back to you soon2.");
+    setFormData({ name: "", email: "", phone: "", message: "" });
+      } catch (error) {
+        console.error("Submission error:", error);
+        alert("Error submitting the form. Please try again later.");
+      } finally {
+        setLoading(false);
       }
-    } catch (error) {
-      console.error("Submission error:", error);
-      alert("Error submitting the form. Please try again later.");
-    } finally {
-      setLoading(false);  // Stop loading
-    }
+    };
     console.log("Form submitted:", formData);
     alert("Thank you for your message! We'll get back to you soon.");
     setFormData({ name: "", email: "", phone: "", message: "" });
