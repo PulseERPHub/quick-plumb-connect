@@ -14,17 +14,17 @@ const Header = () => {
         <nav className="hidden md:flex items-center space-x-6">
           <Link to="/" className="font-medium hover:text-plumbing-blue transition-colors">Home</Link>
           <Link to="/#services" className="font-medium hover:text-plumbing-blue transition-colors">Services</Link>
-          <Link to="/#reviews" className="font-medium hover:text-plumbing-blue transition-colors">Reviews</Link>
+          {/*<Link to="/#reviews" className="font-medium hover:text-plumbing-blue transition-colors">Reviews</Link> */}
           <Link to="/#areas" className="font-medium hover:text-plumbing-blue transition-colors">Coverage</Link>
           <Link to="/#contact" className="font-medium hover:text-plumbing-blue transition-colors">Contact</Link>
         </nav>
         
         <div className="flex items-center space-x-4">
-          <Button variant="outline" className="hidden md:flex items-center gap-2 border-plumbing-blue text-plumbing-blue hover:bg-plumbing-blue hover:text-white">
+          <Button onclick="window.location.href='tel:07837976571'" variant="outline" className="hidden md:flex items-center gap-2 border-plumbing-blue text-plumbing-blue hover:bg-plumbing-blue hover:text-white">
             <Phone size={18} />
             <span>07837976571</span>
           </Button>
-          <Button className="bg-plumbing-emergency hover:bg-red-700 text-white font-bold">
+          <Button onclick="window.location.href='tel:07837976571'" className="bg-plumbing-emergency hover:bg-red-700 text-white font-bold">
             Emergency Call
           </Button>
         </div>
