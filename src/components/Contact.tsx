@@ -13,6 +13,8 @@ const Contact = () => {
     message: ""
   });
 
+  const [loading, setLoading] = useState(false);
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
@@ -20,7 +22,29 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // In a real app, you would send this data to your backend
+    setLoading(true);  // Start loading
+
+    try {
+      const response = await fetch('https://script.google.com/macros/s/AKfycbyDeTC9AD25HehScBgzVMFXNFKGx1yS5voRFwONeQZClBvxNQ9eNplEubqaiFLxE8Bo/exec', {
+        method: 'POST',
+        body: JSON.stringify(formData),
+        headers: { 'Content-Type': 'application/json' }
+      });
+  
+      const result = await response.json();
+  
+      if (result.result === 'success') {
+        alert("Thank you for your message! We'll get back to you soon.");
+        setFormData({ name: "", email: "", phone: "", message: "" });
+      } else {
+        alert("Oops! Something went wrong. Please try again later.");
+      }
+    } catch (error) {
+      console.error("Submission error:", error);
+      alert("Error submitting the form. Please try again later.");
+    } finally {
+      setLoading(false);  // Stop loading
+    }
     console.log("Form submitted:", formData);
     alert("Thank you for your message! We'll get back to you soon.");
     setFormData({ name: "", email: "", phone: "", message: "" });
