@@ -4,7 +4,7 @@ import { Card, CardContent } from "./ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "./ui/carousel";
 
 const reviews = [
-  {/*{
+  {
     name: "Michael Johnson",
     rating: 5,
     date: "October 2023",
@@ -27,12 +27,6 @@ const reviews = [
     rating: 5,
     date: "December 2023",
     text: "Had my radiators serviced and one replaced. Very knowledgeable team and excellent work. Highly recommend."
-  },*/}
-  {
-    name: "NA",
-    rating: 5,
-    date: "NA",
-    text: "No reviews but we still deliver top notch service!"
   }
 ];
 
