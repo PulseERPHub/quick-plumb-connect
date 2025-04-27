@@ -131,9 +131,14 @@ const Contact = () => {
                 />
               </div>
               
-              <Button type="submit" className="w-full bg-plumbing-blue hover:bg-plumbing-skyblue">
-                Send Message
+              <Button 
+                type="submit" 
+                className="w-full bg-plumbing-blue hover:bg-plumbing-skyblue"
+                disabled={loading}
+              >
+                {loading ? 'Sending...' : 'Send Message'}
               </Button>
+
             </form>
           </div>
           
