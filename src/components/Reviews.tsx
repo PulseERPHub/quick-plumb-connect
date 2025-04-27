@@ -4,7 +4,7 @@ import { Card, CardContent } from "./ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "./ui/carousel";
 
 const reviews = [
-  {
+  {/*{
     name: "Michael Johnson",
     rating: 5,
     date: "October 2023",
@@ -27,12 +27,12 @@ const reviews = [
     rating: 5,
     date: "December 2023",
     text: "Had my radiators serviced and one replaced. Very knowledgeable team and excellent work. Highly recommend."
-  },
+  },*/}
   {
-    name: "James Wilson",
-    rating: 5,
-    date: "January 2024",
-    text: "The annual maintenance service was thorough and the plumber gave me lots of helpful advice on how to prevent future issues."
+    name: "",
+    rating: ,
+    date: "",
+    text: "No reviews but we still deliver top notch service!"
   }
 ];
 
