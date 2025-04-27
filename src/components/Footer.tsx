@@ -1,10 +1,9 @@
-
 import { Link } from "react-router-dom";
 import { Phone, MessageCircle, Mail } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  
+
   return (
     <footer className="bg-plumbing-darkgray text-white">
       <div className="container mx-auto px-4 py-12">
@@ -12,7 +11,8 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">South Coast Plumbers</h3>
             <p className="text-gray-300 mb-4">
-              Professional plumbing services for residential properties in Southampton and in areas up to 200 miles.
+              Professional plumbing services for residential properties in
+              Southampton and in areas up to 200 miles.
             </p>
             {/*<div className="flex space-x-4">
               <a href="#" className="text-white hover:text-plumbing-blue transition-colors">
@@ -34,50 +34,130 @@ const Footer = () => {
               </a>
             </div>*/}
           </div>
-          
+
           <div>
             <h3 className="text-xl font-bold mb-4">Our Services</h3>
             <ul className="space-y-2">
-              <li><Link to="/#services" className="text-gray-300 hover:text-white transition-colors">Emergency Repairs</Link></li>
-              <li><Link to="/#services" className="text-gray-300 hover:text-white transition-colors">Taps & Faucets</Link></li>
-              <li><Link to="/#services" className="text-gray-300 hover:text-white transition-colors">Shower Plumbing</Link></li>
-              <li><Link to="/#services" className="text-gray-300 hover:text-white transition-colors">Toilet Repairs</Link></li>
-              <li><Link to="/#services" className="text-gray-300 hover:text-white transition-colors">Radiator Services</Link></li>
-              <li><Link to="/#services" className="text-gray-300 hover:text-white transition-colors">Maintenance</Link></li>
+              <li>
+                <Link
+                  to="/#services"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  Emergency Repairs
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/#services"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  Taps & Faucets
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/#services"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  Shower Plumbing
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/#services"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  Toilet Repairs
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/#services"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  Radiator Services
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/#services"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  Maintenance
+                </Link>
+              </li>
             </ul>
           </div>
-          
+
           <div>
             <h3 className="text-xl font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><Link to="/" className="text-gray-300 hover:text-white transition-colors">Home</Link></li>
-              <li><Link to="/#about" className="text-gray-300 hover:text-white transition-colors">About Us</Link></li>
-              <li><Link to="/#services" className="text-gray-300 hover:text-white transition-colors">Services</Link></li>
+              <li>
+                <Link
+                  to="/"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/#about"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/#services"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  Services
+                </Link>
+              </li>
               {/*<li><Link to="/#reviews" className="text-gray-300 hover:text-white transition-colors">Reviews</Link></li>*/}
-              <li><Link to="/#areas" className="text-gray-300 hover:text-white transition-colors">Coverage Areas</Link></li>
-              <li><Link to="/#contact" className="text-gray-300 hover:text-white transition-colors">Contact Us</Link></li>
+              <li>
+                <Link
+                  to="/#areas"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  Coverage Areas
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/#contact"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  Contact Us
+                </Link>
+              </li>
             </ul>
           </div>
-          
+
           <div>
             <h3 className="text-xl font-bold mb-4">Contact Info</h3>
             <ul className="space-y-4">
-              <li onclick="window.location.href='tel:07837976571'" className="flex items-start">
+              <li className="flex items-start">
                 <Phone size={18} className="mr-3 text-plumbing-blue mt-1" />
-                <span>07837976571</span>
+                <span>0xxxxxx</span>
               </li>
-              <li onclick="window.location.href='https://wa.me/+447837976571'" className="flex items-start" onclick="window.location.href='tel:07837976571'">
-                <MessageCircle size={18} className="mr-3 text-plumbing-blue mt-1" />
-                <span>07837976571 (WhatsApp)</span>
+              <li className="flex items-start">
+                <MessageCircle
+                  size={18}
+                  className="mr-3 text-plumbing-blue mt-1"
+                />
+                <span>0xxxxxx (WhatsApp)</span>
               </li>
-              <li onclick="window.location.href='mailto:info@tbc.com'" className="flex items-start">
+              <li className="flex items-start">
                 <Mail size={18} className="mr-3 text-plumbing-blue mt-1" />
                 <span>info@tbc.com</span>
               </li>
             </ul>
           </div>
         </div>
-        
+
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
           <p className="text-gray-400">
             © {currentYear} South Coast Plumbers. All rights reserved.

@@ -1,4 +1,3 @@
-
 import { MessageCircle, Phone } from "lucide-react";
 import { Button } from "./ui/button";
 import { useState } from "react";
@@ -8,11 +7,11 @@ const Hero = () => {
   const [currentImage, setCurrentImage] = useState("primary");
 
   const handleEmergencyCall = () => {
-    window.location.href = "tel:07837976571";
+    window.location.href = "tel:0xxxxxx";
   };
 
   const handleWhatsAppContact = () => {
-    window.location.href = "https://wa.me/+447837976571";
+    window.location.href = "https://wa.me/+44xxxxxx";
   };
 
   // Updated plumbing-specific image URLs from Unsplash
@@ -38,10 +37,12 @@ const Hero = () => {
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-10 md:mb-0">
             <h1 className="text-4xl md:text-5xl font-bold mb-4 text-plumbing-darkgray">
-              Fast & Reliable <span className="text-plumbing-blue">Plumbing Services</span>
+              Fast & Reliable{" "}
+              <span className="text-plumbing-blue">Plumbing Services</span>
             </h1>
             <p className="text-lg mb-8 text-gray-600">
-              Professional plumbing solutions for all your needs. Available 24/7 for emergency repairs.
+              Professional plumbing solutions for all your needs. Available 24/7
+              for emergency repairs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
@@ -87,4 +88,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
