@@ -30,17 +30,17 @@ const Contact = () => {
       body: JSON.stringify(formData),
       headers: { 'Content-Type': 'application/json' },
       mode: 'no-cors'  // Opaque response
-    });
+      });
 
-    // No way to read response when in no-cors mode
-    alert("Thank you for your message! We'll get back to you soon2.");
-    setFormData({ name: "", email: "", phone: "", message: "" });
-      } catch (error) {
-        console.error("Submission error:", error);
-        alert("Error submitting the form. Please try again later.");
-      } finally {
-        setLoading(false);
-      }
+      // No way to read response when in no-cors mode
+      alert("Thank you for your message! We'll get back to you soon2.");
+      setFormData({ name: "", email: "", phone: "", message: "" });
+        } catch (error) {
+          console.error("Submission error:", error);
+          alert("Error submitting the form. Please try again later.");
+        } finally {
+          setLoading(false);
+        }
     };
     console.log("Form submitted:", formData);
     alert("Thank you for your message! We'll get back to you soon.");
