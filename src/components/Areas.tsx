@@ -36,14 +36,14 @@ const AreasMap = () => {
                   </li>
                 ))}
               </ul>
-              /*<div className="mt-6 p-4 bg-blue-100 rounded">
+              {/*<div className="mt-6 p-4 bg-blue-100 rounded">
                 <h4 className="font-medium text-plumbing-darkgray">Main Office</h4>
                 <p className="text-gray-600">
                   123 Plumbing Street<br />
                   Southampton, SO11 2RT<br />
                   United Kingdom
                 </p>
-              </div>*/
+              </div>*/}
             </div>
           </div>
           
