@@ -23,7 +23,7 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);  // Start loading
-
+    console.log("in HandleSubmit");
     try {
       const response = await fetch('https://script.google.com/macros/s/AKfycbyDeTC9AD25HehScBgzVMFXNFKGx1yS5voRFwONeQZClBvxNQ9eNplEubqaiFLxE8Bo/exec', {
         method: 'POST',
@@ -34,7 +34,7 @@ const Contact = () => {
       const result = await response.json();
   
       if (result.result === 'success') {
-        alert("Thank you for your message! We'll get back to you soon.");
+        alert("Thank you for your message! We'll get back to you soon - hello.");
         setFormData({ name: "", email: "", phone: "", message: "" });
       } else {
         alert("Oops! Something went wrong. Please try again later.");
