@@ -14,14 +14,14 @@ const services = [
     features: ["Fix dripping taps", "Replace washers", "Install new fixtures"]
   },
   {
-    title: "Shower Plumbing",
-    description: "Comprehensive shower plumbing services including installation, repair, and upgrades.",
-    features: ["Fix low pressure", "Repair leaks", "Install new systems"]
+    title: "Shower & Toilets",
+    description: "Comprehensive shower & toilets plumbing services including installation, repair, and upgrades.",
+    features: ["Fix low pressure", "Fix running water", "Install new systems"]
   },
   {
-    title: "Toilet Repairs",
-    description: "Fast and efficient toilet repair services including unblocking, fixing leaks, and replacements.",
-    features: ["Unblock toilets", "Fix running water", "Replace flushing mechanisms"]
+    title: "Blocks",
+    description: "Fast and efficient unblocking services including unblocking toilets, drainage sysmtes, showers and sinks.",
+    features: ["Unblock toilets", "Clear draingage pipes", "Unblock sinks"]
   },
   {
     title: "Radiator Services",
@@ -43,7 +43,7 @@ const Services = () => {
           <h2 className="text-3xl font-bold text-plumbing-darkgray">Our Services</h2>
           <div className="h-1 w-20 bg-plumbing-blue mx-auto mt-4 mb-6"></div>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            We provide a comprehensive range of plumbing services to meet all your residential and commercial needs.
+            We provide a comprehensive range of plumbing services to meet all your residential needs.
           </p>
         </div>
         
