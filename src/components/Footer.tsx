@@ -152,7 +152,7 @@ const Footer = () => {
               </li>
               <li className="flex items-start">
                 <Mail size={18} className="mr-3 text-plumbing-blue mt-1" />
-                <span>info@tbc.com</span>
+                <span>callsouthcoastplumbing@gmail.com</span>
               </li>
             </ul>
           </div>

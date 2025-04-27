@@ -203,7 +203,9 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-medium">Email</h4>
-                    <p className="text-gray-600">info@tbc.com</p>
+                    <p className="text-gray-600">
+                      callsouthcoastplumbing@gmail.com
+                    </p>
                   </div>
                 </div>
 
