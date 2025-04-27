@@ -29,9 +29,9 @@ const reviews = [
     text: "Had my radiators serviced and one replaced. Very knowledgeable team and excellent work. Highly recommend."
   },*/}
   {
-    name: "",
-    rating: ,
-    date: "",
+    name: "NA",
+    rating: 5,
+    date: "NA",
     text: "No reviews but we still deliver top notch service!"
   }
 ];
