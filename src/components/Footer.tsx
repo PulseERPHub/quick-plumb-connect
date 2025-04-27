@@ -62,12 +62,12 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Contact Info</h3>
             <ul className="space-y-4">
-              <li className="flex items-start" onclick="window.location.href='https://wa.me/+447837976571'">
-                <Phone size={18} className="mr-3 text-plumbing-blue mt-1" />
+              <li className="flex items-start">
+                <Phone onclick="window.location.href='tel:07837976571'" size={18} className="mr-3 text-plumbing-blue mt-1" />
                 <span>07837976571</span>
               </li>
               <li className="flex items-start" onclick="window.location.href='tel:07837976571'">
-                <MessageCircle size={18} className="mr-3 text-plumbing-blue mt-1" />
+                <MessageCircle onclick="window.location.href='https://wa.me/+447837976571'" size={18} className="mr-3 text-plumbing-blue mt-1" />
                 <span>07837976571 (WhatsApp)</span>
               </li>
               <li className="flex items-start">
