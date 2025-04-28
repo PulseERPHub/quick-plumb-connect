@@ -141,14 +141,14 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <Phone size={18} className="mr-3 text-plumbing-blue mt-1" />
-                <span>0xxxxxx</span>
+                <span>07435252374</span>
               </li>
               <li className="flex items-start">
                 <MessageCircle
                   size={18}
                   className="mr-3 text-plumbing-blue mt-1"
                 />
-                <span>0xxxxxx (WhatsApp)</span>
+                <span>07435252374 (WhatsApp)</span>
               </li>
               <li className="flex items-start">
                 <Mail size={18} className="mr-3 text-plumbing-blue mt-1" />

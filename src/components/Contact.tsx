@@ -52,11 +52,11 @@ const Contact = () => {
   };
 
   const handleEmergencyCall = () => {
-    window.location.href = "tel:xxxxxx";
+    window.location.href = "tel:07435252374";
   };
 
   const handleWhatsAppContact = () => {
-    window.location.href = "https://wa.me/+xxxxxx";
+    window.location.href = "https://wa.me/+447435252374";
   };
 
   return (
@@ -170,7 +170,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-medium">Phone</h4>
-                    <p className="text-gray-600">0xxxxxx</p>
+                    <p className="text-gray-600">07435252374</p>
                     <Button
                       onClick={handleEmergencyCall}
                       className="mt-2 bg-plumbing-emergency hover:bg-red-700 text-white text-sm px-3 py-1"
@@ -186,7 +186,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-medium">WhatsApp</h4>
-                    <p className="text-gray-600">0xxxxxx</p>
+                    <p className="text-gray-600">07435252374</p>
                     <Button
                       onClick={handleWhatsAppContact}
                       variant="outline"
