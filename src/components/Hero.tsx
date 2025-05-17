@@ -38,7 +38,9 @@ const Hero = () => {
           <div className="md:w-1/2 mb-10 md:mb-0">
             <h1 className="text-4xl md:text-5xl font-bold mb-4 text-plumbing-darkgray">
               Fast & Reliable{" "}
-              <span className="text-plumbing-blue">Plumbing Services</span>
+              <span className="text-plumbing-blue">
+                Plumbing Services in Southampton and South Coast
+              </span>
             </h1>
             <p className="text-lg mb-8 text-gray-600">
               Professional plumbing solutions for all your needs. Available 24/7
