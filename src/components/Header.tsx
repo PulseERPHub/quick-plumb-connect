@@ -3,12 +3,20 @@ import { Button } from "./ui/button";
 import { Link } from "react-router-dom";
 
 const handleEmergencyCall = () => {
-  window.location.href = "tel:07435252374";
-  if (typeof window.gtag !== "undefined") {
-    window.gtag?.("event", "conversion", {
+  const callback = () => {
+    window.location.href = "tel:07435252374"; // phone number
+  };
+
+  if (typeof window.gtag === "function") {
+    window.gtag("event", "conversion", {
       send_to: "AW-17040574932/HvpDCKXIotUaENSTyr0_",
+      event_callback: callback,
     });
+  } else {
+    // fallback if gtag hasn't loaded
+    callback();
   }
+  return false;
 };
 
 const Header = () => {

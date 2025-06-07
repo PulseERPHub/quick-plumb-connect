@@ -7,21 +7,37 @@ const Hero = () => {
   const [currentImage, setCurrentImage] = useState("primary");
 
   const handleEmergencyCall = () => {
-    window.location.href = "tel:07435252374";
-    if (typeof window.gtag !== "undefined") {
-      window.gtag?.("event", "conversion", {
+    const callback = () => {
+      window.location.href = "tel:07435252374"; // phone number
+    };
+
+    if (typeof window.gtag === "function") {
+      window.gtag("event", "conversion", {
         send_to: "AW-17040574932/HvpDCKXIotUaENSTyr0_",
+        event_callback: callback,
       });
+    } else {
+      // fallback if gtag hasn't loaded
+      callback();
     }
+    return false;
   };
 
   const handleWhatsAppContact = () => {
-    window.location.href = "https://wa.me/+447435252374";
-    if (typeof window.gtag !== "undefined") {
-      window.gtag?.("event", "conversion", {
+    const callback = () => {
+      window.location.href = "https://wa.me/+447435252374"; // WA number
+    };
+
+    if (typeof window.gtag === "function") {
+      window.gtag("event", "conversion", {
         send_to: "AW-17040574932/HvpDCKXIotUaENSTyr0_",
+        event_callback: callback,
       });
+    } else {
+      // fallback if gtag hasn't loaded
+      callback();
     }
+    return false;
   };
 
   // Updated plumbing-specific image URLs from Unsplash
