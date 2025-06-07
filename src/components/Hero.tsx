@@ -8,10 +8,20 @@ const Hero = () => {
 
   const handleEmergencyCall = () => {
     window.location.href = "tel:07435252374";
+    if (typeof window.gtag !== "undefined") {
+      window.gtag?.("event", "conversion", {
+        send_to: "AW-17040574932/HvpDCKXIotUaENSTyr0_",
+      });
+    }
   };
 
   const handleWhatsAppContact = () => {
     window.location.href = "https://wa.me/+447435252374";
+    if (typeof window.gtag !== "undefined") {
+      window.gtag?.("event", "conversion", {
+        send_to: "AW-17040574932/HvpDCKXIotUaENSTyr0_",
+      });
+    }
   };
 
   // Updated plumbing-specific image URLs from Unsplash

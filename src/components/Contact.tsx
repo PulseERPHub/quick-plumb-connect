@@ -4,6 +4,12 @@ import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { useState } from "react";
 
+declare global {
+  interface Window {
+    gtag?: (...args: any[]) => void;
+  }
+}
+
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -53,10 +59,20 @@ const Contact = () => {
 
   const handleEmergencyCall = () => {
     window.location.href = "tel:07435252374";
+    if (typeof window.gtag !== "undefined") {
+      window.gtag?.("event", "conversion", {
+        send_to: "AW-17040574932/HvpDCKXIotUaENSTyr0_",
+      });
+    }
   };
 
   const handleWhatsAppContact = () => {
     window.location.href = "https://wa.me/+447435252374";
+    if (typeof window.gtag !== "undefined") {
+      window.gtag?.("event", "conversion", {
+        send_to: "AW-17040574932/HvpDCKXIotUaENSTyr0_",
+      });
+    }
   };
 
   return (
